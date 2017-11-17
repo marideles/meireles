@@ -1,0 +1,2 @@
+module ZumbisHelper
+end

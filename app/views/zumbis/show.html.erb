@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  maria<strong>Nome:</strong>
+  <%= @zumbi.nome %>
+</p>
+
+<p>
+  50<strong>Idade:</strong>
+  <%= @zumbi.idade %>
+</p>
+
+<p>
+  sala<strong>Bio:</strong>
+  <%= @zumbi.bio %>
+</p>
+
+<%= link_to 'Edit', edit_zumbi_path(@zumbi) %> |
+<%= link_to 'Back', zumbis_path %>

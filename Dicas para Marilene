@@ -1,0 +1,36 @@
+Criar a tabela Zombie
+
+Passo 1: Digite: rails g scaffold zombie nome:string idade:integer bio:text
+
+Passo 2: Digite rake db:migrate
+
+Passo 3: Apertar o botão verde "run project"
+
+Passo 4: No lado do endereço, digitar /zombies
+
+Sabendo que a tabela se chama "zombie"
+
+Vamos adicionar duas colunas na tabela: Email e cor
+
+Para isso, vamos fazer o seguinte:
+
+Passo 1 - Digite rails g migration AddEmailAndCorToZombies email:string cor:string
+
+Passo 2 - Digite rake db:migrate
+
+Passo 3 - Abrir a pasta app/view/zombies e clicar em index.html
+
+Passo 4 - No arquivo, copiar as linhas 8 e 9 e colar abaixo da linha 10: trocar os nomes do meio por "Email" e "Cor", respectivamente.
+
+
+Passo 5 - Digitar /zombies ao lado da barra de endereços
+
+Passo 6 - Ir em _form.html.erb, copiar as linhas de código do 14 ate
+o 21 e colar abaixo da linha 26. Editar os nomes em vermelho 
+para o nome das colunas na ordem certa. 
+
+Passo 7 - Salvar o documento
+
+Passo 8 - Clicar em run project
+
+FIM

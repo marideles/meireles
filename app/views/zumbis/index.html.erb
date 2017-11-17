@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Zumbis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Bio</th>
+       <th>Email</th>
+      <th>Cor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @zumbis.each do |zumbi| %>
+      <tr>
+        <td><%= zumbi.nome %></td>
+        <td><%= zumbi.idade %></td>
+        <td><%= zumbi.bio %></td>
+        <td><%= link_to 'Show', zumbi %></td>
+        <td><%= link_to 'Edit', edit_zumbi_path(zumbi) %></td>
+        <td><%= link_to 'Destroy', zumbi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Zumbi', new_zumbi_path %>
